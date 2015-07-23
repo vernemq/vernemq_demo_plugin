@@ -23,6 +23,6 @@ Moreover the ``<PathToYourPlugin>`` should be accessible by VerneMQ (file permis
 Since this demo plugin implements hooks which are already covered by ``vmq_passwd`` and ``vmq_acl`` you might want to disable these in order to see the effect of this plugin.
 
     vmq-admin plugin disable --name vmq_passwd
-    vmq-admin disable plugin --name vmq_acl
+    vmq-admin plugin disable --name vmq_acl
 
 That's it!
