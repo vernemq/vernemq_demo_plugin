@@ -15,14 +15,14 @@ You must have a recent version of Erlang installed (it's recommended to use the 
 
 Then enable the plugin
 
-    vmq-admin enable plugin --name vernemq_demo_plugin --path <PathToYourPlugin>/vernemq_demo_plugin
+    vmq-admin plugin enable --name vernemq_demo_plugin --path <PathToYourPlugin>/vernemq_demo_plugin
 
 Depending on how VerneMQ is started you might need ``sudo`` rights to access ``vmq-admin``.
 Moreover the ``<PathToYourPlugin>`` should be accessible by VerneMQ (file permissions).
 
 Since this demo plugin implements hooks which are already covered by ``vmq_passwd`` and ``vmq_acl`` you might want to disable these in order to see the effect of this plugin.
 
-    vmq-admin disable plugin --name vmq_passwd
+    vmq-admin plugin disable --name vmq_passwd
     vmq-admin disable plugin --name vmq_acl
 
 That's it!
